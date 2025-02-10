@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine?</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Will you be my Valentine?💖</h2>
+        <div class="buttons">
+            <button id="yesBtn">Yes 💕</button>
+            <button id="noBtn">No 💔</button>
+        </div>
+        <p id="test"> </p>
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById("yesBtn").addEventListener('click', function()
+{
+ document.getElementById("test").innerHTML = "Yay💖! Can't wait to celebrate.🎉";
+});
+
+const NOBTN = document.getElementById("noBtn");
+
+NOBTN.addEventListener("mouseover",function()
+{
+ const maxX= window.innerWidth - NOBTN.clientWidth-20;
+ const maxY = window.innerHeight- NOBTN.clientHeight-20;
+
+ const randomX = Math.random()*maxX;
+ const randomY = Math.random()*maxY;
+
+ NOBTN.style.position="absolute";
+ NOBTN.style.left=randomX+"px"; 
+ NOBTN.style.top=randomY+"px"; 
+
+});
+</script>
