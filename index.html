@@ -28,8 +28,8 @@
 });
 
 const NOBTN = document.getElementById("noBtn");
-
-NOBTN.addEventListener("mouseover",function()
+                       
+function moveButton()
 {
  const maxX= window.innerWidth - NOBTN.clientWidth-20;
  const maxY = window.innerHeight- NOBTN.clientHeight-20;
@@ -41,5 +41,7 @@ NOBTN.addEventListener("mouseover",function()
  NOBTN.style.left=randomX+"px"; 
  NOBTN.style.top=randomY+"px"; 
 
-});
+}
+NOBTN.addEventListener("mouseover",moveButton)
+NOBTN.addEventListener("touchstart",moveButton)
 </script>
