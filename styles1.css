@@ -1,0 +1,43 @@
+body{
+    
+    background-color: palevioletred;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+
+.container{
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgb(60, 59, 59);
+
+}
+h2{
+    color: rgb(243, 37, 120);
+    font-size: 30px;
+}
+.buttons button{
+    font-size: 20px;
+}
+
+#noBtn{
+    background-color: rgb(176, 174, 174);
+}
+#noBtn:hover{
+ color: white;
+}
+#yesBtn{
+    background-color: rgb(229, 110, 143);
+}
+#yesBtn:hover{
+    color: rgb(249, 245, 245);
+   }
+#test{
+    font-size: 20px;
+}
